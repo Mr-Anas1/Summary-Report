@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.result {
+    background: linear-gradient(to top,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    color: white;
+    width: 40%;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+.result p{
+    font-size: small;
+    color:  hsl(241, 100%, 89%);
+}
+
+.result h5 {
+    color:  hsl(241, 100%, 89%);
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.score {
+    background: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 140px;
+    height: 140px;
+    position: relative;
+    left: 4%;
+    padding: 0PX;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#score {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#mini-score {
+    font-size: 12px;
+}
+
+.summary {
+    padding: 10px 20px;
+    width: 60%;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    background-color: hsla(0, 100%, 67%,10%);
+    padding:0 10px;
+    border-radius: 10px;
+}
+
+.two {
+    background-color: hsla(39, 100%, 56%,10%);
+    padding:0 10px;
+    border-radius: 10px;
+}
+.three {
+    background-color: hsla(166, 100%, 37%,10%);
+    padding:0 10px;
+    border-radius: 10px;
+}
+.four {
+    background-color: hsla(234, 85%, 45%,10%);
+    padding:0 10px;
+    border-radius: 10px;
+}
+
+button {
+    background-color:hsl(224, 30%, 27%);
+    color: white;
+    padding: 12px 80px ;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 1px;
+    transition: transform 0.4s ease;
+}
+
+button:hover{
+    transform: translateY(-5px);
+    background:linear-gradient(to top,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+h3 {
+    margin: 5px 0px 10px;
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .result {
+        width: 70%;
+    }
+
+    .summary {
+        width: 80%;
+    }
+
+    button {
+        left: 20%;
+    }
+
+    div.score {
+        left: 20%;
+    }
+}
